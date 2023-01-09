@@ -1,10 +1,10 @@
 
 //Components
-import Home from "./Pages/Home/Home.js";
-import Promobar from "./Componentes/Promobar/Promobar.js";
-import Header from "./Componentes/Header/Header.js";
-import Footer from "./Componentes/Footer/Footer.js";
-import ProductList from "./Pages/ProductList/ProductList.js";
+import Home from "./Pages/Home/Home.jsx";
+import Promobar from "./Componentes/Promobar/Promobar.jsx";
+import Header from "./Componentes/Header/Header.jsx";
+import Footer from "./Componentes/Footer/Footer.jsx";
+import ProductList from "./Pages/ProductList/ProductList.jsx";
 
 //Routers
 import { Routes, Route } from "react-router-dom";
