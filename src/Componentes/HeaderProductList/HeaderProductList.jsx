@@ -1,6 +1,6 @@
 import SortBar from "../SortBar/SortBar";
 
-function HeaderProductList() {
+const HeaderProductList = () => {
   return (
     <div id="headerproductlist">
       <div className="textoverlay">

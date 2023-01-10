@@ -1,4 +1,4 @@
-function Breadcrumb() {
+const Breadcrumb = () => {
   return (
     <div className="breadcrumb">
       <div className="gridrow">

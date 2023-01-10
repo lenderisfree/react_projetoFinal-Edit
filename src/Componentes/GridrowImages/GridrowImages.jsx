@@ -31,3 +31,5 @@ const GridrowImages = () => {
     </div>
   );
 };
+
+export default GridrowImages;

@@ -1,4 +1,4 @@
-function Looks (){
+const Looks = () => {
     return(
         <section id="looks" className="paddingverticaldouble">
         <h2 className="textcenter marginbottomfull">Looks</h2>

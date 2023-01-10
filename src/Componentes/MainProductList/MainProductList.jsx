@@ -1,4 +1,4 @@
-function MainProductList() {
+const MainProductList = () => {
   return (
     <div
       id="mainproductlist"

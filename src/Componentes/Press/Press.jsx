@@ -1,4 +1,4 @@
-function Press(){
+const Press = () => {
     return(
         <section id="press" className="paddingverticaldouble bg-graylight">
                 <h2 className="textcenter marginbottomfull">Press</h2>

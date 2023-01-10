@@ -1,4 +1,4 @@
-function About() {
+const About = () => {
   return (
     <section id="about" className="paddingverticaldouble">
       <h2 className="textcenter marginbottomfull">About</h2>

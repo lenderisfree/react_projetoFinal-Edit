@@ -1,6 +1,6 @@
 import MainProductList from "../MainProductList/MainProductList";
 
-function Filters() {
+const Filters = () => {
   return (
     <div className="gridrow">
       <div id="filters" className="col-12 col-t-4 col-d-3">

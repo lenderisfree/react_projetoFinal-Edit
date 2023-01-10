@@ -1,4 +1,4 @@
-function Journal() {
+const  Journal = () => {
   return (
     <section id="journal" className="paddingverticaldouble">
       <h2 className="textcenter marginbottomfull">Journal</h2>
