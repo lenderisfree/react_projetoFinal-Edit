@@ -45,7 +45,7 @@ const ProductPage = () => {
       <div id="bigimg" className="col-9 col-t-4 col-d-5">
         <img
           className="imgfit"
-          srcset="imgs/products/product23.jpg 720w, imgs/products/medium/product23.jpg 640w"
+          srcSet="imgs/products/product23.jpg 720w, imgs/products/medium/product23.jpg 640w"
           sizes="(min-width: 1200px) 720px, 640px"
           src="imgs/products/product23.jpg"
         />
@@ -118,7 +118,7 @@ const ProductPage = () => {
             <button type="button" className="btnleft">
               -
             </button>
-            <input type="number" value="1" name="qty" />
+            <input type="number" defaultValue="1" name="qty" />
             <button type="button" className="btnright">
               +
             </button>
@@ -146,7 +146,7 @@ const ProductPage = () => {
                     Nunc a augue velit. Nullam eget velit sit amet orci
                     dignissim iaculis. Quisque dignissim neque in odio laoreet
                     sodales. Phasellus gravida facilisis est. Ut nec metus
-                    lobortis, euismod felis eget, ornare erat. Donec gravida
+                    lobortis, euismod felis eget, ornare erat. Donec gravidavalue
                     diam sed facilisis consequat. Nam tincidunt sem elit, a
                     facilisis nibh maximus vitae. Proin suscipit augue mi, id
                     sollicitudin orci lacinia vitae. Vestibulum est neque,

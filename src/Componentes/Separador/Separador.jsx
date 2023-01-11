@@ -22,3 +22,6 @@ const Separador = () => {
     </>
   );
 };
+
+export default Separador;
+

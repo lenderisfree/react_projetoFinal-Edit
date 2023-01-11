@@ -4,7 +4,7 @@ const GridrowImages = () => {
       <div className="col-12 col-t-4">
         <img
           className="imgfit"
-          srcset="imgs/press/press01.jpg 720w, imgs/press/medium/press01.jpg 450w"
+          srcSet="imgs/press/press01.jpg 720w, imgs/press/medium/press01.jpg 450w"
           sizes="(min-width: 1200px) 720px, 450px"
           src="imgs/press/press01.jpg"
         />
@@ -13,7 +13,7 @@ const GridrowImages = () => {
       <div className="col-6 col-t-4">
         <img
           className="imgfit"
-          srcset="imgs/press/press02.jpg 720w, imgs/press/medium/press02.jpg 450w"
+          srcSet="imgs/press/press02.jpg 720w, imgs/press/medium/press02.jpg 450w"
           sizes="(min-width: 1200px) 720px, 450px"
           src="imgs/press/press02.jpg"
         />
@@ -22,7 +22,7 @@ const GridrowImages = () => {
       <div className="col-6 col-t-4">
         <img
           className="imgfit"
-          srcset="imgs/press/press03.jpg 720w, imgs/press/medium/press03.jpg 450w"
+          srcSet="imgs/press/press03.jpg 720w, imgs/press/medium/press03.jpg 450w"
           sizes="(min-width: 1200px) 720px, 450px"
           src="imgs/press/press03.jpg"
         />

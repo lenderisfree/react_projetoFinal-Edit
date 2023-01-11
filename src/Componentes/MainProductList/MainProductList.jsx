@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const MainProductList = () => {
   return (
     <div
@@ -10,13 +12,16 @@ const MainProductList = () => {
         title="View Product"
       >
         <div className="product-card-image">
-          <img
-            className="imgfit"
-            srcSet="imgs/products/product09.jpg 720w, imgs/products/medium/product09.jpg 640w, imgs/products/small/product09.jpg 240w"
-            sizes="(min-width: 1200px) 720px, (min-width: 750px) 640px, 240px"
-            src="imgs/products/product09.jpg"
-          />
+          <Link to="/Product">
+            <img
+              className="imgfit"
+              srcSet="imgs/products/product09.jpg 720w, imgs/products/medium/product09.jpg 640w, imgs/products/small/product09.jpg 240w"
+              sizes="(min-width: 1200px) 720px, (min-width: 750px) 640px, 240px"
+              src="imgs/products/product09.jpg"
+            />
+          </Link>
         </div>
+
         <p className="margintophalf marginbottomnone">
           Black and purple Ren Sneakers
         </p>
@@ -241,6 +246,6 @@ const MainProductList = () => {
       </div>
     </div>
   );
-}
+};
 
 export default MainProductList;

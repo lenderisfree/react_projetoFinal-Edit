@@ -11,7 +11,7 @@ const RelatedProduts = () => {
           <div className="product-card-image">
             <img
               className="imgfit"
-              srcset="imgs/products/product21.jpg 720w, imgs/products/medium/product21.jpg 640w, imgs/products/small/product21.jpg 240w"
+              srcSet="imgs/products/product21.jpg 720w, imgs/products/medium/product21.jpg 640w, imgs/products/small/product21.jpg 240w"
               sizes="(min-width: 1200px) 720px, (min-width: 750px) 640px, 240px"
               src="imgs/products/product21.jpg"
             />
@@ -30,7 +30,7 @@ const RelatedProduts = () => {
           <div className="product-card-image">
             <img
               className="imgfit"
-              srcset="imgs/products/product22.jpg 720w, imgs/products/medium/product22.jpg 640w, imgs/products/small/product22.jpg 240w"
+              srcSet="imgs/products/product22.jpg 720w, imgs/products/medium/product22.jpg 640w, imgs/products/small/product22.jpg 240w"
               sizes="(min-width: 1200px) 720px, (min-width: 750px) 640px, 240px"
               src="imgs/products/product22.jpg"
             />
@@ -49,7 +49,7 @@ const RelatedProduts = () => {
           <div className="product-card-image">
             <img
               className="imgfit"
-              srcset="imgs/products/product24.jpg 720w, imgs/products/medium/product24.jpg 640w, imgs/products/small/product24.jpg 240w"
+              srcSet="imgs/products/product24.jpg 720w, imgs/products/medium/product24.jpg 640w, imgs/products/small/product24.jpg 240w"
               sizes="(min-width: 1200px) 720px, (min-width: 750px) 640px, 240px"
               src="imgs/products/product24.jpg"
             />
@@ -68,7 +68,7 @@ const RelatedProduts = () => {
           <div className="product-card-image">
             <img
               className="imgfit"
-              srcset="imgs/products/product25.jpg 720w, imgs/products/medium/product25.jpg 640w, imgs/products/small/product25.jpg 240w"
+              srcSet="imgs/products/product25.jpg 720w, imgs/products/medium/product25.jpg 640w, imgs/products/small/product25.jpg 240w"
               sizes="(min-width: 1200px) 720px, (min-width: 750px) 640px, 240px"
               src="imgs/products/product25.jpg"
             />

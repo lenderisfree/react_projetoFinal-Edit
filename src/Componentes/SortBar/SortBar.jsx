@@ -6,7 +6,7 @@ function SortBar() {
         <div className="col-8 textright">
           Sort by
           <select>
-            <option defaultValue="Price" selected>
+            <option defaultValue="Price">
               Price
             </option>
             <option value="Popularity">Popularity</option>

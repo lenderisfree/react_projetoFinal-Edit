@@ -4,13 +4,13 @@ import SortBar from "../../Componentes/SortBar/SortBar";
 
 
 
-function ProductList() {
+const ProductList = () => {
   return (
-    <div>
+    <>
       <HeaderProductList/>
       <SortBar/>
       <Filters/>
-    </div>
+    </>
   );
 }
 

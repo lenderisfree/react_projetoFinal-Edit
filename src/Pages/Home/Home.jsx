@@ -6,7 +6,7 @@ import Looks from "../../Componentes/Looks/Looks.jsx";
 import Press from "../../Componentes/Press/Press.jsx";
 import TalkingAboutUs from "../../Componentes/TalkingAboutUs/TalkingAboutUs";
 
-function Home() {
+const Home = () => {
   return (
     <>
       <Slider />

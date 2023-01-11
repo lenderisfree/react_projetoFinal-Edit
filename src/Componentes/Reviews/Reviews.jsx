@@ -2,8 +2,7 @@ const Reviews = () => {
   return (
     <div
       className="bg-graylight paddingverticaldouble marginbottomfull"
-      id="reviews"
-    >
+      id="reviews">
       <h2 className="textcenter">Reviews</h2>
       <div className="gridrow">
         <div className="col-12 col-t-5 col-d-4 offset-t-1 offset-d-2 score">

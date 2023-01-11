@@ -1,13 +1,16 @@
 
 //Components
-import Home from "./Pages/Home/Home.jsx";
+
 import Promobar from "./Componentes/Promobar/Promobar.jsx";
 import Header from "./Componentes/Header/Header.jsx";
 import Footer from "./Componentes/Footer/Footer.jsx";
-import ProductList from "./Pages/ProductList/ProductList.jsx";
+
 
 //Routers
 import { Routes, Route } from "react-router-dom";
+import Product from "./Pages/Product/Product.jsx";
+import ProductList from "./Pages/ProductList/ProductList.jsx";
+import Home from "./Pages/Home/Home.jsx";
 
 function App() {
   return (
@@ -17,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/ProductList" element={<ProductList/>}></Route>
+          <Route path="/Product" element={<Product/>}></Route>
         </Routes>
         <Footer />
     </>
