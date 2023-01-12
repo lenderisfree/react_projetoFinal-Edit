@@ -1,25 +1,43 @@
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+
 
 const MainProductList = () => {
+  const [data, setData] = useState([]);
+  
+  const listDataProducts = async () => { 
+    const res = await fetch ('https://foxcoding.net/api/getProductsList');
+    const response = await res.json();
+    console.log(response)
+  }
+
+  useEffect(() =>{
+    listDataProducts();
+  }, []);
+
+
+
+
+
   return (
     <div
       id="mainproductlist"
       className="product-list col-12 col-t-8 col-d-9 gridrowfull"
     >
-      <a
+      <Link to="/Product"
         className="product-card col-6 col-d-4"
         href="product.html"
         title="View Product"
       >
         <div className="product-card-image">
-          <Link to="/Product">
+          
             <img
               className="imgfit"
               srcSet="imgs/products/product09.jpg 720w, imgs/products/medium/product09.jpg 640w, imgs/products/small/product09.jpg 240w"
               sizes="(min-width: 1200px) 720px, (min-width: 750px) 640px, 240px"
               src="imgs/products/product09.jpg"
             />
-          </Link>
         </div>
 
         <p className="margintophalf marginbottomnone">
@@ -27,7 +45,7 @@ const MainProductList = () => {
         </p>
         <p className="gray marginnone">Tops</p>
         <p className="secondary marginnone">$123.00</p>
-      </a>
+      </Link>
       <a
         className="product-card col-6 col-d-4"
         href="product.html"
