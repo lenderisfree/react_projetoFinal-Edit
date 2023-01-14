@@ -1,4 +1,24 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+
 const ProductPage = () => {
+
+  const [product, setProduct] = useState ([]);
+
+  useEffect(() =>{
+    const productList = async () =>{
+      const res = await fetch(
+        "https://foxcoding.net/api/getProduct?id=1"
+        );
+        const response = await res.json();
+        setProduct (response.data.product);
+    };
+
+    productList();
+  }, []);
+
+  let {id} = useParams()
+  
   return (
     <div className="gridrow" id="product">
       <div id="thumbs" className="col-3 col-t-1">
