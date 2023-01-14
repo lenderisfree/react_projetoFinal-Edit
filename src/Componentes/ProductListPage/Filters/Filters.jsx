@@ -1,5 +1,6 @@
 import MainProductList from "../MainProductList/MainProductList";
 
+
 const Filters = () => {
   return (
     <div className="gridrow">

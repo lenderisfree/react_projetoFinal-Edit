@@ -1,6 +1,6 @@
-import Filters from "../../Componentes/Filters/Filters";
-import HeaderProductList from "../../Componentes/HeaderProductList/HeaderProductList";
-import SortBar from "../../Componentes/SortBar/SortBar";
+import Filters from "../../Componentes/ProductListPage/Filters/Filters";
+import HeaderProductList from "../../Componentes/ProductListPage/HeaderProductList/HeaderProductList";
+import SortBar from "../../Componentes/ProductListPage/SortBar/SortBar";
 
 
 

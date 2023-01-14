@@ -2,7 +2,7 @@
 //Components
 
 import Promobar from "./Componentes/Promobar/Promobar.jsx";
-import Header from "./Componentes/Header/Header.jsx";
+import Header from "./Componentes/HomePage/Header/Header.jsx";
 import Footer from "./Componentes/Footer/Footer.jsx";
 
 
