@@ -12,6 +12,7 @@ const MainProductList = () => {
       );
       const response = await res.json();
       setProducts(response.data.products);
+      
     };
 
     listDataProducts();
