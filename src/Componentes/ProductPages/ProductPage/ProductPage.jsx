@@ -1,24 +1,25 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const ProductPage = () => {
 
-  const [product, setProduct] = useState ([]);
+const ProductPage = () => {
+  
+  const [itemId, setItemId] = useState ([]);
+  const {id} = useParams();
 
   useEffect(() =>{
-    const productList = async () =>{
+    const getItemId = async () =>{
       const res = await fetch(
-        "https://foxcoding.net/api/getProduct?id=1"
+        `https://foxcoding.net/api/getProduct?/=${id}`
         );
         const response = await res.json();
-        setProduct (response.data.product);
+        setItemId (response);
     };
 
-    productList();
-  }, []);
+    
+      getItemId();
+    }, []);
 
-  let {id} = useParams()
-  
   return (
     <div className="gridrow" id="product">
       <div id="thumbs" className="col-3 col-t-1">
@@ -29,35 +30,35 @@ const ProductPage = () => {
         >
           <img
             className="imgfit"
-            src="imgs/products/thumbs/thumb01.jpg"
+            src={itemId.image}
             alt="Red classNameic Chest Logo Hoodie 1"
           />
         </a>
         <a href="#" title="Red classNameic Chest Logo Hoodie 2">
           <img
             className="imgfit"
-            src="imgs/products/thumbs/thumb02.jpg"
+            src={itemId.image}
             alt="Red classNameic Chest Logo Hoodie 2"
           />
         </a>
         <a href="#" title="Red classNameic Chest Logo Hoodie 3">
           <img
             className="imgfit"
-            src="imgs/products/thumbs/thumb03.jpg"
+            src={itemId.image}
             alt="Red classNameic Chest Logo Hoodie 3"
           />
         </a>
         <a href="#" title="Red classNameic Chest Logo Hoodie 4">
           <img
             className="imgfit"
-            src="imgs/products/thumbs/thumb04.jpg"
+            src={itemId.image}
             alt="Red classNameic Chest Logo Hoodie 4"
           />
         </a>
         <a href="#" title="Red classNameic Chest Logo Hoodie 5">
           <img
             className="imgfit"
-            src="imgs/products/thumbs/thumb05.jpg"
+            src={itemId.image}
             alt="Red classNameic Chest Logo Hoodie 5"
           />
         </a>
@@ -65,9 +66,9 @@ const ProductPage = () => {
       <div id="bigimg" className="col-9 col-t-4 col-d-5">
         <img
           className="imgfit"
-          srcSet="imgs/products/product23.jpg 720w, imgs/products/medium/product23.jpg 640w"
+          src="imgs/products/product23.jpg 720w, imgs/products/medium/product23.jpg 640w"
           sizes="(min-width: 1200px) 720px, 640px"
-          src="imgs/products/product23.jpg"
+          srcSet={itemId.image}
         />
         <div className="share margintopfull">
           Share this product
@@ -83,9 +84,9 @@ const ProductPage = () => {
         </div>
       </div>
       <div id="product-description" className="col-12 col-t-7 col-d-6">
-        <h1>Red classNameic Chest Logo Hoodie</h1>
+        <h1>{itemId.description}</h1>
         <div className="product-description-line gridrowfull nogutter">
-          <div className="col-6 price">USD 351.00</div>
+          <div className="col-6 price">{itemId.price}</div>
           <div className="col-6 textright score">
             <i className="icn-star primary"></i>
             <i className="icn-star primary"></i>

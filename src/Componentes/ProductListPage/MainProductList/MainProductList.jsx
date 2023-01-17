@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
+import { BaseProduct } from "../../../Api/Api";
 
 
 const MainProductList = () => {
@@ -8,7 +9,7 @@ const MainProductList = () => {
   useEffect(() => {
     const listDataProducts = async () => {
       const res = await fetch(
-        "https://foxcoding.net/api/getProductsList?nProducts=25"
+        `${BaseProduct}?nProducts=25`
       );
       const response = await res.json();
       setProducts(response.data.products);
@@ -25,9 +26,9 @@ const MainProductList = () => {
       className="product-list col-12 col-t-8 col-d-9 gridrowfull"
     >
       {products &&
-        products.map((product) => {
+        products.map((product, keyprop) => {
           return (
-            <>
+            <Fragment key={keyprop}>
               <Link
                 to={`../Product/${product.id}`}
                 className="product-card col-6 col-d-4"
@@ -47,7 +48,7 @@ const MainProductList = () => {
                 <p className="gray marginnone">Tops</p>
                 <p className="secondary marginnone">$ {product.price}</p>
               </Link>
-            </>
+            </Fragment>
           );
         })}
 
