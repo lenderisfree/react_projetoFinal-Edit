@@ -13,6 +13,7 @@ const MainProductList = () => {
       );
       const response = await res.json();
       setProducts(response.data.products);
+      console.log(response)
       
     };
 
@@ -43,7 +44,7 @@ const MainProductList = () => {
                 </div>
 
                 <p className="margintophalf marginbottomnone">
-                  {product.description}
+                  {product.name}
                 </p>
                 <p className="gray marginnone">Tops</p>
                 <p className="secondary marginnone">$ {product.price}</p>

@@ -14,6 +14,8 @@ const ProductPage = () => {
         );
         const response = await res.json();
         setItemId (response);
+        
+        
     };
 
     
@@ -84,7 +86,7 @@ const ProductPage = () => {
         </div>
       </div>
       <div id="product-description" className="col-12 col-t-7 col-d-6">
-        <h1>{itemId.description}</h1>
+        <h1>{itemId.name}</h1>
         <div className="product-description-line gridrowfull nogutter">
           <div className="col-6 price">{itemId.price}</div>
           <div className="col-6 textright score">

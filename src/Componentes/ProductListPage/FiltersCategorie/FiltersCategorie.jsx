@@ -1,3 +1,4 @@
+import FilterSize from "../../FiltersSize/FiltersSize";
 import MainProductList from "../MainProductList/MainProductList";
 
 
@@ -41,7 +42,7 @@ const Filters = () => {
               </li>
             </ul>
           </li>
-          <li>
+          <li className="open">
             <a href="#" title="Bottoms">
               Bottoms
               <i className="icn-chevron-down"></i>
@@ -65,7 +66,7 @@ const Filters = () => {
               </li>
             </ul>
           </li>
-          <li>
+          <li className="open">
             <a href="#" title="Bags">
               Bags
               <i className="icn-chevron-down"></i>
@@ -109,18 +110,7 @@ const Filters = () => {
             </ul>
           </li>
         </ul>
-        <div className="sizes">
-          <p className="fancytext">- Sizes</p>
-          <div className="sizebtns marginverticalfourth">
-            <button type="button">1</button>
-            <button type="button">2</button>
-            <button type="button">3</button>
-            <button type="button">4</button>
-          </div>
-          <a href="#" title="View Size Guide" className="fancytext">
-            See our sizing guide
-          </a>
-        </div>
+      <FilterSize/>
       </div>
       <MainProductList/>
     </div>

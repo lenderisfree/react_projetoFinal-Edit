@@ -1,4 +1,4 @@
-import Filters from "../../Componentes/ProductListPage/Filters/Filters";
+import Filters from "../../Componentes/ProductListPage/FiltersCategorie/FiltersCategorie";
 import HeaderProductList from "../../Componentes/ProductListPage/HeaderProductList/HeaderProductList";
 import SortBar from "../../Componentes/ProductListPage/SortBar/SortBar";
 
