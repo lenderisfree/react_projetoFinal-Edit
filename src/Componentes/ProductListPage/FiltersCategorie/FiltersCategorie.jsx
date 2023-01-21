@@ -1,120 +1,51 @@
 import FilterSize from "../../FiltersSize/FiltersSize";
 import MainProductList from "../MainProductList/MainProductList";
-
+import { BaseProduct } from "../../../Api/Api";
+import { useEffect, useState } from "react";
+import FilterItemCategories from "./FilterItemCategories";
 
 const Filters = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const filterProducts = async () => {
+      const res = await fetch(`${BaseProduct}?nProducts=25`);
+      const response = await res.json();
+      setProducts(response.data.products);
+    };
+
+    filterProducts();
+  }, []);
+
+  //Filters
+
   return (
     <div className="gridrow">
       <div id="filters" className="col-12 col-t-4 col-d-3">
         <p className="fancytext">Filters</p>
         <ul className="categories">
-          <li className="open">
-            <a href="#" title="Tops">
-              Tops
-              <i className="icn-chevron-down"></i>
-              <i className="icn-chevron-up"></i>
-            </a>
-            <ul>
-              <li>
-                <a href="#" title="Jackets">
-                  <i className="icn-chevron-right"></i> Jackets
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Sweaters">
-                  <i className="icn-chevron-right"></i> Sweaters
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Shirts">
-                  <i className="icn-chevron-right"></i> Shirts
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Tees">
-                  <i className="icn-chevron-right"></i> Tees
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Polos">
-                  <i className="icn-chevron-right"></i> Polos
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li className="open">
-            <a href="#" title="Bottoms">
-              Bottoms
-              <i className="icn-chevron-down"></i>
-              <i className="icn-chevron-up"></i>
-            </a>
-            <ul>
-              <li>
-                <a href="#" title="Shorts">
-                  <i className="icn-chevron-right"></i> Shorts
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Trousers">
-                  <i className="icn-chevron-right"></i> Trousers
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Skirts">
-                  <i className="icn-chevron-right"></i> Skirts
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li className="open">
-            <a href="#" title="Bags">
-              Bags
-              <i className="icn-chevron-down"></i>
-              <i className="icn-chevron-up"></i>
-            </a>
-            <ul>
-              <li>
-                <a href="#" title="Travel">
-                  <i className="icn-chevron-right"></i> Travel
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Work">
-                  <i className="icn-chevron-right"></i> Work
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li className="open">
-            <a href="#" title="Bags">
-              Shoes
-              <i className="icn-chevron-down"></i>
-              <i className="icn-chevron-up"></i>
-            </a>
-            <ul>
-              <li>
-                <a href="#" title="Sneakers">
-                  <i className="icn-chevron-right"></i> Sneakers
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Boots">
-                  <i className="icn-chevron-right"></i> Boots
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Flip-flops">
-                  <i className="icn-chevron-right"></i> Flip-flops
-                </a>
-              </li>
-            </ul>
-          </li>
+          <FilterItemCategories
+            name="TOPS"
+            categories={["Snickers", "Coats"]}
+            key={crypto.randomUUID()}
+          />
+          <FilterItemCategories
+            name="TOPS 22"
+            categories={["dsfd", "dsfgsd", "dsf"]}
+            key={crypto.randomUUID()}
+          />
+          <FilterItemCategories
+            name="TOPS 22"
+            categories={["1", "22", "Marco", "1", "22", "Marco"]}
+            key={crypto.randomUUID()}
+          />
         </ul>
-      <FilterSize/>
+        <FilterSize />
       </div>
-      <MainProductList/>
+      <MainProductList />
     </div>
   );
-}
-
+};
 export default Filters;
+
+// sfc + tab

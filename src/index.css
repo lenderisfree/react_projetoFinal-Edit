@@ -399,7 +399,7 @@ small, .small, .fancytext, .central-link a, .central-link-light a, #filters .cat
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  transition: all 4s ease;
 }
 
 /* ================================== */
@@ -1850,6 +1850,8 @@ div > header nav ul#customermenu i {
   padding: 0;
 }
 
+
+
 #filters .categories.open {
   display: block;
 }
@@ -1888,6 +1890,7 @@ div > header nav ul#customermenu i {
 
 #filters .categories > li.open > a .icn-chevron-up {
   display: block;
+  
 }
 
 #filters .categories > li.open > a .icn-chevron-down {

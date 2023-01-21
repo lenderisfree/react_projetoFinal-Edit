@@ -12,9 +12,7 @@ const MainProductList = () => {
         `${BaseProduct}?nProducts=25`
       );
       const response = await res.json();
-      setProducts(response.data.products);
-      console.log(response)
-      
+      setProducts(response.data.products);      
     };
 
     listDataProducts();
