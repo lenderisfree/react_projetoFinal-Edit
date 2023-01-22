@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
-import { Fragment, useEffect, useState } from "react";
-import { BaseProduct } from "../../../Api/Api";
+import { Fragment } from "react";
 
-
-const MainProductList = ({products}) => {
-/*   const [products, setProducts] = useState([]);
+const MainProductList = ({ products }) => {
+  /*   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const listDataProducts = async () => {
@@ -17,7 +15,6 @@ const MainProductList = ({products}) => {
 
     listDataProducts();
   }, []); */
-
 
   return (
     <div
@@ -41,9 +38,7 @@ const MainProductList = ({products}) => {
                   />
                 </div>
 
-                <p className="margintophalf marginbottomnone">
-                  {product.name}
-                </p>
+                <p className="margintophalf marginbottomnone">{product.name}</p>
                 <p className="gray marginnone">Tops</p>
                 <p className="secondary marginnone">$ {product.price}</p>
               </Link>
