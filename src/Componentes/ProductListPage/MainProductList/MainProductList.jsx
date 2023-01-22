@@ -3,8 +3,8 @@ import { Fragment, useEffect, useState } from "react";
 import { BaseProduct } from "../../../Api/Api";
 
 
-const MainProductList = () => {
-  const [products, setProducts] = useState([]);
+const MainProductList = ({products}) => {
+/*   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const listDataProducts = async () => {
@@ -16,7 +16,7 @@ const MainProductList = () => {
     };
 
     listDataProducts();
-  }, []);
+  }, []); */
 
 
   return (

@@ -1854,6 +1854,7 @@ div > header nav ul#customermenu i {
 
 #filters .categories.open {
   display: block;
+  
 }
 
 @media (min-width: 750px) {
@@ -1890,6 +1891,7 @@ div > header nav ul#customermenu i {
 
 #filters .categories > li.open > a .icn-chevron-up {
   display: block;
+  
   
 }
 
